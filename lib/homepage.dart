@@ -14,15 +14,88 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.blueGrey,
       appBar: const Appbar(),
       body: Column(
         children: [
           Expanded(
             child: ListView(
               scrollDirection: Axis.vertical,
-              children: [
-                CurrentWeather(),
+              children: <Widget>[
+                const Padding(padding: EdgeInsets.only(top: 40)),
+                const CurrentWeather(),
+                const Padding(padding: EdgeInsets.only(bottom: 50)),
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: const [
+                      Text(
+                        "Updated 10:00 PM",
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Padding(padding: EdgeInsets.only(left: 175)),
+                      Text(
+                        "AccuWeather",
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const Divider(
+                  color: Colors.white,
+                  thickness: 1,
+                ),
+                SizedBox(
+                  height: 160,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: const [
+                      HourlyWeather(),
+                    ],
+                  ),
+                ),
+                const Divider(
+                  color: Colors.white,
+                  thickness: 1,
+                ),
+                const Padding(padding: EdgeInsets.only(bottom: 15)),
+                const CurrentWeather(),
+                const Divider(
+                  color: Colors.white,
+                  thickness: 1,
+                ),
+                const Padding(padding: EdgeInsets.only(bottom: 15)),
+                const CurrentWeather(),
+                const Divider(
+                  color: Colors.white,
+                  thickness: 1,
+                ),
+                const Padding(padding: EdgeInsets.only(bottom: 15)),
+                const CurrentWeather(),
+                const Divider(
+                  color: Colors.white,
+                  thickness: 1,
+                ),
+                const Padding(padding: EdgeInsets.only(bottom: 15)),
+                const CurrentWeather(),
+                const Divider(
+                  color: Colors.white,
+                  thickness: 1,
+                ),
+                const Padding(padding: EdgeInsets.only(bottom: 15)),
+                const CurrentWeather(),
+                const Divider(
+                  color: Colors.white,
+                  thickness: 1,
+                ),
               ],
             ),
           ),
