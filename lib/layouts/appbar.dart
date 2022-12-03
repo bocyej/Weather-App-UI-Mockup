@@ -11,7 +11,7 @@ class Appbar extends StatelessWidget with PreferredSizeWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.check_box),
+          icon: const Icon(Icons.corporate_fare),
           tooltip: 'Settings',
           onPressed: () {},
         ),
