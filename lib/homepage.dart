@@ -54,10 +54,16 @@ class HomePage extends StatelessWidget {
                   thickness: 1,
                 ),
                 SizedBox(
-                  height: 160,
+                  height: 120,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: const [
+                      HourlyWeather(),
+                      HourlyWeather(),
+                      HourlyWeather(),
+                      HourlyWeather(),
+                      HourlyWeather(),
+                      HourlyWeather(),
                       HourlyWeather(),
                     ],
                   ),
