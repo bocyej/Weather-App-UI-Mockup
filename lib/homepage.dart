@@ -27,8 +27,9 @@ class HomePage extends StatelessWidget {
                 const Padding(padding: EdgeInsets.only(bottom: 50)),
                 Container(
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: const [
+                      Padding(padding: EdgeInsets.only(left: 5)),
                       Text(
                         "Updated 10:00 PM",
                         style: TextStyle(
@@ -37,7 +38,7 @@ class HomePage extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
-                      Padding(padding: EdgeInsets.only(left: 175)),
+                      Padding(padding: EdgeInsets.only(left: 155)),
                       Text(
                         "AccuWeather",
                         style: TextStyle(
@@ -46,6 +47,7 @@ class HomePage extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
+                      Padding(padding: EdgeInsets.only(right: 5)),
                     ],
                   ),
                 ),
@@ -72,32 +74,37 @@ class HomePage extends StatelessWidget {
                   color: Colors.white,
                   thickness: 1,
                 ),
-                const Padding(padding: EdgeInsets.only(bottom: 15)),
-                const CurrentWeather(),
+                const Padding(padding: EdgeInsets.only(bottom: 5)),
+                const DailyWeather(),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const Divider(
                   color: Colors.white,
                   thickness: 1,
                 ),
-                const Padding(padding: EdgeInsets.only(bottom: 15)),
-                const CurrentWeather(),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
+                const DailyWeather(),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const Divider(
                   color: Colors.white,
                   thickness: 1,
                 ),
-                const Padding(padding: EdgeInsets.only(bottom: 15)),
-                const CurrentWeather(),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
+                const DailyWeather(),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const Divider(
                   color: Colors.white,
                   thickness: 1,
                 ),
-                const Padding(padding: EdgeInsets.only(bottom: 15)),
-                const CurrentWeather(),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
+                const DailyWeather(),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const Divider(
                   color: Colors.white,
                   thickness: 1,
                 ),
-                const Padding(padding: EdgeInsets.only(bottom: 15)),
-                const CurrentWeather(),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
+                const DailyWeather(),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const Divider(
                   color: Colors.white,
                   thickness: 1,
