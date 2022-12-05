@@ -27,7 +27,7 @@ class WindInfo extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-                Padding(padding: EdgeInsets.only(right: 300)),
+                Padding(padding: EdgeInsets.only(right: 305)),
                 Icon(
                   Icons.arrow_forward_ios,
                   color: Colors.white38,
