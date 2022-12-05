@@ -52,7 +52,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 const Divider(
-                  color: Colors.white,
+                  color: Colors.white38,
                   thickness: 1,
                 ),
                 SizedBox(
@@ -71,42 +71,69 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 const Divider(
-                  color: Colors.white,
+                  color: Colors.white38,
                   thickness: 1,
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 5)),
                 const DailyWeather(),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const Divider(
-                  color: Colors.white,
+                  color: Colors.white38,
                   thickness: 1,
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const DailyWeather(),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const Divider(
-                  color: Colors.white,
+                  color: Colors.white38,
                   thickness: 1,
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const DailyWeather(),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const Divider(
-                  color: Colors.white,
+                  color: Colors.white38,
                   thickness: 1,
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const DailyWeather(),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const Divider(
-                  color: Colors.white,
+                  color: Colors.white38,
                   thickness: 1,
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const DailyWeather(),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const Divider(
-                  color: Colors.white,
+                  color: Colors.white38,
+                  thickness: 1,
+                ),
+                // const Padding(padding: EdgeInsets.only(bottom: 5)),
+                Container(
+                  height: 45,
+                  child: InkWell(
+                    onTap: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(builder: (context) => const RewardsPage()),
+                      // ),
+                    },
+                    child: const Center(
+                      child: Text(
+                        "Extended Forecast",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.white54,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                // const Padding(padding: EdgeInsets.only(bottom: 5)),
+                const Divider(
+                  color: Colors.white38,
                   thickness: 1,
                 ),
               ],
