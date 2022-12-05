@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: const [
-                      Padding(padding: EdgeInsets.only(left: 5)),
+                      Padding(padding: EdgeInsets.only(left: 20)),
                       Text(
                         "Updated 10:00 PM",
                         style: TextStyle(
@@ -47,13 +47,15 @@ class HomePage extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
-                      Padding(padding: EdgeInsets.only(right: 5)),
+                      Padding(padding: EdgeInsets.only(right: 20)),
                     ],
                   ),
                 ),
                 const Divider(
                   color: Colors.white38,
                   thickness: 1,
+                  indent: 20,
+                  endIndent: 20,
                 ),
                 SizedBox(
                   height: 120,
@@ -73,6 +75,8 @@ class HomePage extends StatelessWidget {
                 const Divider(
                   color: Colors.white38,
                   thickness: 1,
+                  indent: 20,
+                  endIndent: 20,
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 5)),
                 const DailyWeather(),
@@ -80,6 +84,8 @@ class HomePage extends StatelessWidget {
                 const Divider(
                   color: Colors.white38,
                   thickness: 1,
+                  indent: 20,
+                  endIndent: 20,
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const DailyWeather(),
@@ -87,6 +93,8 @@ class HomePage extends StatelessWidget {
                 const Divider(
                   color: Colors.white38,
                   thickness: 1,
+                  indent: 20,
+                  endIndent: 20,
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const DailyWeather(),
@@ -94,6 +102,8 @@ class HomePage extends StatelessWidget {
                 const Divider(
                   color: Colors.white38,
                   thickness: 1,
+                  indent: 20,
+                  endIndent: 20,
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const DailyWeather(),
@@ -101,6 +111,8 @@ class HomePage extends StatelessWidget {
                 const Divider(
                   color: Colors.white38,
                   thickness: 1,
+                  indent: 20,
+                  endIndent: 20,
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const DailyWeather(),
@@ -108,9 +120,11 @@ class HomePage extends StatelessWidget {
                 const Divider(
                   color: Colors.white38,
                   thickness: 1,
+                  indent: 20,
+                  endIndent: 20,
                 ),
                 // const Padding(padding: EdgeInsets.only(bottom: 5)),
-                Container(
+                SizedBox(
                   height: 45,
                   child: InkWell(
                     onTap: () {
@@ -135,7 +149,25 @@ class HomePage extends StatelessWidget {
                 const Divider(
                   color: Colors.white38,
                   thickness: 1,
+                  indent: 20,
+                  endIndent: 20,
                 ),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
+                const ComfortLevel(),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
+                const Divider(
+                  color: Colors.white38,
+                  thickness: 1,
+                  indent: 20,
+                  endIndent: 20,
+                ),
+                // const Padding(padding: EdgeInsets.only(bottom: 10)),
+                // const WindInfo(),
+                // const Padding(padding: EdgeInsets.only(bottom: 10)),
+                // const Divider(
+                //   color: Colors.white38,
+                //   thickness: 1,
+                // ),
               ],
             ),
           ),
