@@ -50,7 +50,7 @@ class DailyWeather extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 25,
                           fontWeight: FontWeight.w400,
-                          color: Colors.grey,
+                          color: Colors.white54,
                         ),
                       ),
                     ],
