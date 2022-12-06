@@ -4,6 +4,7 @@ import 'layouts/appbar.dart';
 import 'layouts/comfort_level.dart';
 import 'layouts/current_weather.dart';
 import 'layouts/daily_weather.dart';
+import 'layouts/date_time.dart';
 import 'layouts/hourly_weather.dart';
 import 'layouts/sun_information.dart';
 import 'layouts/wind_information.dart';
@@ -172,6 +173,8 @@ class HomePage extends StatelessWidget {
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 const SunInfo(),
+                const Padding(padding: EdgeInsets.only(bottom: 10)),
+                const DateAndTime(),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
               ],
             ),
