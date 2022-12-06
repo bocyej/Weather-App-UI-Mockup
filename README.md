@@ -1,3 +1,3 @@
-# Weather App
+# Huawei Weather App UI Mockup
 
-Practicing flutter by creating a Mockup of the Huawei Weather App
+Weather App using flutter. Created for learning purposes only.
