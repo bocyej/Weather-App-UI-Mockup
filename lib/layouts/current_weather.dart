@@ -8,34 +8,66 @@ class CurrentWeather extends StatelessWidget {
     return InkWell(
       onTap: () {},
       child: Container(
-        height: 150,
+        height: 205,
         child: Center(
           child: Column(
-            children: const [
-              Text(
-                "27°",
-                style: TextStyle(
-                  fontSize: 80,
-                  fontWeight: FontWeight.w200,
-                  color: Colors.white,
-                ),
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text(
+                    "27",
+                    style: TextStyle(
+                      fontSize: 115,
+                      fontWeight: FontWeight.w300,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Column(
+                    children: const [
+                      Text(
+                        "°",
+                        style: TextStyle(
+                          fontSize: 50,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Padding(padding: EdgeInsets.only(bottom: 45)),
+                    ],
+                  ),
+                ],
               ),
-              Text(
+              const Text(
                 "Mostly Cloudy",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 25,
                   fontWeight: FontWeight.w500,
                   color: Colors.white,
                 ),
               ),
-              Padding(padding: EdgeInsets.only(bottom: 10)),
-              Text(
-                "32° /  25°",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.white,
-                ),
+              const Padding(padding: EdgeInsets.only(bottom: 15)),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Text(
+                    "32°",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Padding(padding: EdgeInsets.only(right: 5)),
+                  Text(
+                    "/  25°",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.white38,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
