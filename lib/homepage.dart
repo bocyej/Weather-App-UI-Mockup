@@ -147,12 +147,7 @@ class HomePage extends StatelessWidget {
                   SizedBox(
                     height: 45,
                     child: InkWell(
-                      onTap: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(builder: (context) => const RewardsPage()),
-                        // ),
-                      },
+                      onTap: () {},
                       child: const Center(
                         child: Text(
                           "Extended Forecast",

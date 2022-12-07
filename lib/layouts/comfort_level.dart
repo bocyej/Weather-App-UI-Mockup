@@ -10,12 +10,7 @@ class ComfortLevel extends StatelessWidget {
       child: Column(
         children: [
           InkWell(
-            onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const RewardsPage()),
-              // ),
-            },
+            onTap: () {},
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [

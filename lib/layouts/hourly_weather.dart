@@ -9,12 +9,7 @@ class HourlyWeather extends StatelessWidget {
       children: [
         const Padding(padding: EdgeInsets.only(left: 10)),
         InkWell(
-          onTap: () {
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(builder: (context) => const RewardsPage()),
-            // ),
-          },
+          onTap: () {},
           child: Container(
             height: 95,
             child: Column(

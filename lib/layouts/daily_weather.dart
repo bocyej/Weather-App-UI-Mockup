@@ -9,12 +9,7 @@ class DailyWeather extends StatelessWidget {
       child: Column(
         children: [
           InkWell(
-            onTap: () {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => const RewardsPage()),
-              // ),
-            },
+            onTap: () {},
             child: Container(
               height: 35,
               child: Row(

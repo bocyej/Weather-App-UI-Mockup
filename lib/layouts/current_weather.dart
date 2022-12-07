@@ -6,12 +6,7 @@ class CurrentWeather extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        // Navigator.push(
-        //   context,
-        //   MaterialPageRoute(builder: (context) => const RewardsPage()),
-        // ),
-      },
+      onTap: () {},
       child: Container(
         height: 150,
         child: Center(
