@@ -25,3 +25,5 @@ flutter:
   uses-material-design: true
   assets:
     - assets/sun_info.png
+    - assets/night_sky.jpg
+    - assets/appbar_night_sky.jpg
