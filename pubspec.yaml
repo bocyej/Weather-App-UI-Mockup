@@ -27,3 +27,5 @@ flutter:
     - assets/sun_info.png
     - assets/night_sky.jpg
     - assets/appbar_night_sky.jpg
+    - assets/humidity.png
+    - assets/wind_info.png
