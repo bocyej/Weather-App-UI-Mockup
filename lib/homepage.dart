@@ -35,26 +35,39 @@ class HomePage extends StatelessWidget {
                   Container(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        Padding(padding: EdgeInsets.only(left: 20)),
-                        Text(
+                      children: [
+                        const Padding(padding: EdgeInsets.only(left: 20)),
+                        const Text(
                           "Updated 10:00 PM",
                           style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.w400,
-                            color: Colors.white,
+                            color: Colors.white38,
                           ),
                         ),
-                        Padding(padding: EdgeInsets.only(left: 155)),
-                        Text(
-                          "AccuWeather",
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w400,
-                            color: Colors.white,
+                        const Padding(padding: EdgeInsets.only(left: 135)),
+                        InkWell(
+                          onTap: () {},
+                          child: Row(
+                            children: const [
+                              Icon(
+                                Icons.wb_sunny,
+                                size: 15,
+                                color: Colors.white38,
+                              ),
+                              Padding(padding: EdgeInsets.only(right: 5)),
+                              Text(
+                                "AccuWeather",
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w400,
+                                  color: Colors.white38,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                        Padding(padding: EdgeInsets.only(right: 20)),
+                        const Padding(padding: EdgeInsets.only(right: 20)),
                       ],
                     ),
                   ),
