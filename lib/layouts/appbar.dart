@@ -8,8 +8,14 @@ class Appbar extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-        backgroundColor: Colors.transparent,
         elevation: 0,
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+              image: DecorationImage(
+            image: AssetImage('assets/appbar_night_sky.jpg'),
+            fit: BoxFit.fill,
+          )),
+        ),
         leading: IconButton(
           icon: const Icon(Icons.corporate_fare),
           tooltip: 'Settings',
