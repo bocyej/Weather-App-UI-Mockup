@@ -188,8 +188,6 @@ class HomePage extends StatelessWidget {
                   const Padding(padding: EdgeInsets.only(bottom: 10)),
                   const SunInfo(),
                   const Padding(padding: EdgeInsets.only(bottom: 10)),
-                  DateAndTime(),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
                 ],
               ),
             ),
