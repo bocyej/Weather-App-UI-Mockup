@@ -25,7 +25,7 @@ class Appbar extends StatelessWidget with PreferredSizeWidget {
           child: Text(
             "Manila",
             style: TextStyle(
-              fontSize: 20,
+              fontSize: 23,
               fontWeight: FontWeight.w400,
               color: Colors.white,
             ),
