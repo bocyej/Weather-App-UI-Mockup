@@ -6,7 +6,7 @@ class WindInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 185,
+      height: 210,
       child: Column(
         children: [
           InkWell(
@@ -31,14 +31,13 @@ class WindInfo extends StatelessWidget {
               ],
             ),
           ),
-          const Padding(padding: EdgeInsets.only(bottom: 10)),
+          const Padding(padding: EdgeInsets.only(bottom: 25)),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              const Icon(
-                Icons.wind_power,
-                color: Colors.white,
-                size: 150,
+              const Image(
+                image: AssetImage("assets/wind_info.png"),
+                height: 150,
               ),
               Column(
                 children: [

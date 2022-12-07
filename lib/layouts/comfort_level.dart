@@ -46,10 +46,9 @@ class ComfortLevel extends StatelessWidget {
                     ),
                   ),
                   const Padding(padding: EdgeInsets.only(bottom: 5)),
-                  const Icon(
-                    Icons.circle_outlined,
-                    color: Colors.white,
-                    size: 200,
+                  const Image(
+                    image: AssetImage("assets/humidity.png"),
+                    height: 180,
                   ),
                   Row(
                     children: const [
