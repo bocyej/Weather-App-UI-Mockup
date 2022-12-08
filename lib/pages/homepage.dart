@@ -4,7 +4,7 @@ import '../layouts/home_appbar.dart';
 import '../layouts/comfort_level.dart';
 import '../layouts/current_weather.dart';
 import '../layouts/daily_weather/daily_weather.dart';
-import '../layouts/daily_weather/dailly_extend.dart';
+import '../layouts/daily_weather/daily_extend.dart';
 import '../layouts/hourly_weather/hourly_update.dart';
 import '../layouts/hourly_weather/hourly_weather.dart';
 import '../layouts/sun_information.dart';
@@ -63,15 +63,6 @@ class HomePage extends StatelessWidget {
                     indent: 20,
                     endIndent: 20,
                   ),
-                  const Padding(padding: EdgeInsets.only(bottom: 5)),
-                  const DailyWeather(),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
-                  const Divider(
-                    color: Colors.white38,
-                    thickness: 1,
-                    indent: 20,
-                    endIndent: 20,
-                  ),
                   const Padding(padding: EdgeInsets.only(bottom: 10)),
                   const DailyWeather(),
                   const Padding(padding: EdgeInsets.only(bottom: 10)),
@@ -108,7 +99,16 @@ class HomePage extends StatelessWidget {
                     indent: 20,
                     endIndent: 20,
                   ),
-                  DailyExtend(),
+                  const Padding(padding: EdgeInsets.only(bottom: 10)),
+                  const DailyWeather(),
+                  const Padding(padding: EdgeInsets.only(bottom: 10)),
+                  const Divider(
+                    color: Colors.white38,
+                    thickness: 1,
+                    indent: 20,
+                    endIndent: 20,
+                  ),
+                  const DailyExtend(),
                   const Divider(
                     color: Colors.white38,
                     thickness: 1,
