@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/pages/homepage.dart';
 
-class Appbar extends StatelessWidget with PreferredSizeWidget {
-  const Appbar({super.key});
+class SettingsAppbar extends StatelessWidget with PreferredSizeWidget {
+  const SettingsAppbar({super.key});
 
   Size get preferredSize => const Size.fromHeight(50);
 
@@ -18,7 +18,7 @@ class Appbar extends StatelessWidget with PreferredSizeWidget {
         )),
       ),
       leading: IconButton(
-        icon: const Icon(Icons.arrow_back_ios),
+        icon: const Icon(Icons.arrow_back),
         tooltip: 'Back',
         onPressed: () {
           Navigator.push(
