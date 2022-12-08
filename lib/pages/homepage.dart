@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
-import 'layouts/appbar.dart';
-import 'layouts/comfort_level.dart';
-import 'layouts/current_weather.dart';
-import 'layouts/daily_weather.dart';
-import 'layouts/date_time.dart';
-import 'layouts/hourly_weather.dart';
-import 'layouts/sun_information.dart';
-import 'layouts/wind_information.dart';
+import '../layouts/home_appbar.dart';
+import '../layouts/comfort_level.dart';
+import '../layouts/current_weather.dart';
+import '../layouts/daily_weather/daily_weather.dart';
+import '../layouts/daily_weather/dailly_extend.dart';
+import '../layouts/hourly_weather/hourly_update.dart';
+import '../layouts/hourly_weather/hourly_weather.dart';
+import '../layouts/sun_information.dart';
+import '../layouts/wind_information.dart';
+
+import '../pages/settings_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -32,45 +35,7 @@ class HomePage extends StatelessWidget {
                   const Padding(padding: EdgeInsets.only(top: 40)),
                   const CurrentWeather(),
                   const Padding(padding: EdgeInsets.only(bottom: 50)),
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        const Padding(padding: EdgeInsets.only(left: 20)),
-                        const Text(
-                          "Updated 10:00 PM",
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w400,
-                            color: Colors.white38,
-                          ),
-                        ),
-                        const Padding(padding: EdgeInsets.only(left: 135)),
-                        InkWell(
-                          onTap: () {},
-                          child: Row(
-                            children: const [
-                              Icon(
-                                Icons.wb_sunny,
-                                size: 15,
-                                color: Colors.white38,
-                              ),
-                              Padding(padding: EdgeInsets.only(right: 5)),
-                              Text(
-                                "AccuWeather",
-                                style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w400,
-                                  color: Colors.white38,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        const Padding(padding: EdgeInsets.only(right: 20)),
-                      ],
-                    ),
-                  ),
+                  const HourlyUpdate(),
                   const Divider(
                     color: Colors.white38,
                     thickness: 1,
@@ -143,24 +108,7 @@ class HomePage extends StatelessWidget {
                     indent: 20,
                     endIndent: 20,
                   ),
-                  // const Padding(padding: EdgeInsets.only(bottom: 5)),
-                  SizedBox(
-                    height: 45,
-                    child: InkWell(
-                      onTap: () {},
-                      child: const Center(
-                        child: Text(
-                          "Extended Forecast",
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w400,
-                            color: Colors.white54,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  // const Padding(padding: EdgeInsets.only(bottom: 5)),
+                  DailyExtend(),
                   const Divider(
                     color: Colors.white38,
                     thickness: 1,
