@@ -36,7 +36,6 @@ class SunInfo extends StatelessWidget {
             image: AssetImage("assets/sun_info.png"),
             height: 150,
           ),
-          // const Padding(padding: EdgeInsets.only(bottom: 10)),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
