@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 
-import '../layouts/home_appbar.dart';
-import '../layouts/comfort_level.dart';
-import '../layouts/current_weather.dart';
-import '../layouts/daily_weather/daily_weather.dart';
+import '../layouts/homepage/home_appbar.dart';
+import '../layouts/homepage/comfort_level.dart';
+import '../layouts/homepage/current_weather.dart';
+import '../layouts/daily_weather/daily_weather1.dart';
+import '../layouts/daily_weather/daily_weather2.dart';
+import '../layouts/daily_weather/daily_weather3.dart';
+import '../layouts/daily_weather/daily_weather4.dart';
+import '../layouts/daily_weather/daily_weather5.dart';
+import '../layouts/daily_weather/daily_weather6.dart';
 import '../layouts/daily_weather/daily_extend.dart';
 import '../layouts/hourly_weather/hourly_update.dart';
 import '../layouts/hourly_weather/hourly_weather1.dart';
@@ -13,10 +18,8 @@ import '../layouts/hourly_weather/hourly_weather4.dart';
 import '../layouts/hourly_weather/hourly_weather5.dart';
 import '../layouts/hourly_weather/hourly_weather6.dart';
 import '../layouts/hourly_weather/hourly_weather7.dart';
-import '../layouts/sun_information.dart';
-import '../layouts/wind_information.dart';
-
-import '../pages/settings_page.dart';
+import '../layouts/homepage/sun_information.dart';
+import '../layouts/homepage/wind_information.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -24,7 +27,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const Appbar(),
+      appBar: const HomeAppbar(),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
@@ -38,16 +41,8 @@ class HomePage extends StatelessWidget {
               child: ListView(
                 scrollDirection: Axis.vertical,
                 children: <Widget>[
-                  const Padding(padding: EdgeInsets.only(top: 40)),
                   const CurrentWeather(),
-                  const Padding(padding: EdgeInsets.only(bottom: 50)),
                   const HourlyUpdate(),
-                  const Divider(
-                    color: Colors.white38,
-                    thickness: 1,
-                    indent: 20,
-                    endIndent: 20,
-                  ),
                   SizedBox(
                     height: 120,
                     child: ListView(
@@ -63,85 +58,16 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const Divider(
-                    color: Colors.white38,
-                    thickness: 1,
-                    indent: 20,
-                    endIndent: 20,
-                  ),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
-                  const DailyWeather(),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
-                  const Divider(
-                    color: Colors.white38,
-                    thickness: 1,
-                    indent: 20,
-                    endIndent: 20,
-                  ),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
-                  const DailyWeather(),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
-                  const Divider(
-                    color: Colors.white38,
-                    thickness: 1,
-                    indent: 20,
-                    endIndent: 20,
-                  ),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
-                  const DailyWeather(),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
-                  const Divider(
-                    color: Colors.white38,
-                    thickness: 1,
-                    indent: 20,
-                    endIndent: 20,
-                  ),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
-                  const DailyWeather(),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
-                  const Divider(
-                    color: Colors.white38,
-                    thickness: 1,
-                    indent: 20,
-                    endIndent: 20,
-                  ),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
-                  const DailyWeather(),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
-                  const Divider(
-                    color: Colors.white38,
-                    thickness: 1,
-                    indent: 20,
-                    endIndent: 20,
-                  ),
+                  const DailyWeatherOne(),
+                  const DailyWeatherTwo(),
+                  const DailyWeatherThree(),
+                  const DailyWeatherFour(),
+                  const DailyWeatherFive(),
+                  const DailyWeatherSix(),
                   const DailyExtend(),
-                  const Divider(
-                    color: Colors.white38,
-                    thickness: 1,
-                    indent: 20,
-                    endIndent: 20,
-                  ),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
                   const ComfortLevel(),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
-                  const Divider(
-                    color: Colors.white38,
-                    thickness: 1,
-                    indent: 20,
-                    endIndent: 20,
-                  ),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
                   const WindInfo(),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
-                  const Divider(
-                    color: Colors.white38,
-                    thickness: 1,
-                    indent: 20,
-                    endIndent: 20,
-                  ),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
                   const SunInfo(),
-                  const Padding(padding: EdgeInsets.only(bottom: 10)),
                 ],
               ),
             ),
