@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HourlyWeather extends StatelessWidget {
-  const HourlyWeather({super.key});
+class HourlyWeatherOne extends StatelessWidget {
+  const HourlyWeatherOne({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class HourlyWeather extends StatelessWidget {
             child: Column(
               children: [
                 const Text(
-                  "2:00 PM",
+                  "10:00 PM",
                   style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.w400,
@@ -23,16 +23,15 @@ class HourlyWeather extends StatelessWidget {
                   ),
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
-                const Icon(
-                  Icons.thunderstorm,
-                  color: Colors.white,
-                  size: 35,
+                const Image(
+                  image: AssetImage("assets/cloud_moon.png"),
+                  height: 35,
                 ),
                 const Padding(padding: EdgeInsets.only(bottom: 10)),
                 Row(
                   children: const [
                     Text(
-                      "32°",
+                      "27°",
                       style: TextStyle(
                         fontSize: 17,
                         fontWeight: FontWeight.w400,
