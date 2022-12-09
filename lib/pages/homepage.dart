@@ -6,7 +6,13 @@ import '../layouts/current_weather.dart';
 import '../layouts/daily_weather/daily_weather.dart';
 import '../layouts/daily_weather/daily_extend.dart';
 import '../layouts/hourly_weather/hourly_update.dart';
-import '../layouts/hourly_weather/hourly_weather.dart';
+import '../layouts/hourly_weather/hourly_weather1.dart';
+import '../layouts/hourly_weather/hourly_weather2.dart';
+import '../layouts/hourly_weather/hourly_weather3.dart';
+import '../layouts/hourly_weather/hourly_weather4.dart';
+import '../layouts/hourly_weather/hourly_weather5.dart';
+import '../layouts/hourly_weather/hourly_weather6.dart';
+import '../layouts/hourly_weather/hourly_weather7.dart';
 import '../layouts/sun_information.dart';
 import '../layouts/wind_information.dart';
 
@@ -47,13 +53,13 @@ class HomePage extends StatelessWidget {
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: const [
-                        HourlyWeather(),
-                        HourlyWeather(),
-                        HourlyWeather(),
-                        HourlyWeather(),
-                        HourlyWeather(),
-                        HourlyWeather(),
-                        HourlyWeather(),
+                        HourlyWeatherOne(),
+                        HourlyWeatherTwo(),
+                        HourlyWeatherThree(),
+                        HourlyWeatherFour(),
+                        HourlyWeatherFive(),
+                        HourlyWeatherSix(),
+                        HourlyWeatherSeven(),
                       ],
                     ),
                   ),
