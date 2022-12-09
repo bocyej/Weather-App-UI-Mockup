@@ -4,6 +4,7 @@ import 'package:weather_app/pages/homepage.dart';
 class SettingsAppbar extends StatelessWidget with PreferredSizeWidget {
   const SettingsAppbar({super.key});
 
+  @override
   Size get preferredSize => const Size.fromHeight(50);
 
   @override
