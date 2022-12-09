@@ -9,7 +9,7 @@ class DateAndTime extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final todayadd = today.add(Duration(days: 1));
+    final todayadd = today.add(const Duration(days: 1));
 
     return Container(
       child: Column(
