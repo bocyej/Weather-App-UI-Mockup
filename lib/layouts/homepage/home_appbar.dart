@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/pages/settings_page.dart';
 
-class Appbar extends StatelessWidget with PreferredSizeWidget {
-  const Appbar({super.key});
+class HomeAppbar extends StatelessWidget with PreferredSizeWidget {
+  const HomeAppbar({super.key});
 
+  @override
   Size get preferredSize => const Size.fromHeight(50);
 
   @override
