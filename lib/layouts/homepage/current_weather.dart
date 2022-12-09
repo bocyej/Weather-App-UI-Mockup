@@ -7,11 +7,12 @@ class CurrentWeather extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {},
-      child: Container(
-        height: 205,
+      child: SizedBox(
+        height: 295,
         child: Center(
           child: Column(
             children: [
+              const Padding(padding: EdgeInsets.only(top: 40)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -69,6 +70,7 @@ class CurrentWeather extends StatelessWidget {
                   ),
                 ],
               ),
+              const Padding(padding: EdgeInsets.only(bottom: 50)),
             ],
           ),
         ),
