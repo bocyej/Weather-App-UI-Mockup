@@ -29,3 +29,7 @@ flutter:
     - assets/appbar_night_sky.jpg
     - assets/humidity.png
     - assets/wind_info.png
+    - assets/cloud_moon.png
+    - assets/cloud_rain.png
+    - assets/cloud_sun.png
+    - assets/cloud_thunder.png
