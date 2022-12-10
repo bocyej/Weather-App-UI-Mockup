@@ -10,7 +10,7 @@ class HourlyWeatherThree extends StatelessWidget {
         const Padding(padding: EdgeInsets.only(left: 10)),
         InkWell(
           onTap: () {},
-          child: Container(
+          child: SizedBox(
             height: 95,
             child: Column(
               children: [
