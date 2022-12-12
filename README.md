@@ -14,7 +14,5 @@ Disclaimer: I do not own any of the icons and images used in the application. Pl
   
 ## Videos:
 <div align="center">
-<video src="https://user-images.githubusercontent.com/94532348/207108815-9cdfd171-a756-47c3-abf5-56ffc01b5519.mp4" height=1000/>
+<video src="https://user-images.githubusercontent.com/94532348/207108815-9cdfd171-a756-47c3-abf5-56ffc01b5519.mp4" height=1500/>
 </div>
-
-
