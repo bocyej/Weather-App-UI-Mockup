@@ -15,7 +15,7 @@ class HourlyWeatherSix extends StatelessWidget {
             child: Column(
               children: [
                 const Text(
-                  "4:00 AM",
+                  "3:00 AM",
                   style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.w400,
