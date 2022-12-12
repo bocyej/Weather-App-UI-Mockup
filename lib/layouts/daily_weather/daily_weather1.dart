@@ -20,7 +20,7 @@ class DailyWeatherOne extends StatelessWidget {
             child: SizedBox(
               height: 35,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
                     "Tomorrow, Dec 3",
@@ -30,12 +30,12 @@ class DailyWeatherOne extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
-                  const Padding(padding: EdgeInsets.only(right: 10)),
+                  const Padding(padding: EdgeInsets.only(right: 45)),
                   const Image(
                     image: AssetImage("assets/cloud_thunder.png"),
                     height: 35,
                   ),
-                  const Padding(padding: EdgeInsets.only(right: 10)),
+                  const Padding(padding: EdgeInsets.only(right: 45)),
                   Row(
                     children: const [
                       Text(
